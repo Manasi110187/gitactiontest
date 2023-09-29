@@ -1,0 +1,25 @@
+name Hello word workflow
+
+on:
+   push:
+      branches:
+          -master
+   pull_request:
+      branches:
+          -master
+      workflow dispatch:
+jobs:
+ hello:
+ runs-on:mac
+ steps:
+     -uses:actions/checkout@v2
+     -name:"hello world"
+     shell:bash
+
+goodbye:
+runs-on: mac
+steps:
+-name:goodbye_world
+run:echo "goodbye"
+shell:bash
+     
