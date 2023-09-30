@@ -20,4 +20,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: java -jar swapTwonNumbers.java
+      - run: java -jar /Users/mtilwalli/git/repository/my-first-framework/src/main/java/InterviewPrep/swapTwoNumbers.java
+    
